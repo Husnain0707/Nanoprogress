@@ -1,0 +1,96 @@
+.header {
+    .navbar {
+
+        @include media-breakpoint-up(md) {      
+            padding: 23px 60px 23px 60px;
+        }
+
+        .navbar-logo {
+            max-width: 100%;
+            width: 190px;
+        }
+
+        .navbar-toggler {
+            &:focus {
+                box-shadow: unset;
+            }
+        }
+
+        .nav-item {
+            margin-right: 30px;
+
+            .nav-link {
+               position: relative;
+               font-size: 15px;
+               font-weight: $font600;
+               color: black;
+
+               &:hover {
+                    color: $purple;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .contact-us-list {
+            margin-top: 8px;
+            margin-bottom: 8px;          
+        }
+    }
+}
+
+// Search Navbar
+
+.search-bar input[type=text] {
+    padding: 4px;
+    border: 1px solid $black;
+    outline: none;
+    color: $black;
+
+    &::placeholder {
+        color: $black;
+        font-size: 18px;
+        font-weight: $font400;
+    }
+}
+
+.search-bar {
+    position: relative;
+    padding-top: 20px;
+    margin-bottom: -17px;
+
+    @include media-breakpoint-down(md) {      
+        margin: 0;
+    }
+
+    .search-form {
+        display: flex;
+        justify-content: end;
+
+        @include media-breakpoint-down(md) {      
+            justify-content: center;
+        }
+
+        .search-input {
+            margin-right: 50px;
+        }
+
+        .search-btn {
+            position: absolute;
+            right: 17%;
+            padding: 5px;
+            background: none;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+
+            @include media-breakpoint-down(md) {      
+                right: 40%;
+            }
+        }
+        
+        .search-text {
+            margin-top: 6px;
+        }
+    }
+}

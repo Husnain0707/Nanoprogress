@@ -1,0 +1,36 @@
+.tiles-banner {
+    background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 179px;
+}
+.tiles-container {
+    background-color: $secondary;
+    padding: 100px 0 100px 0;
+
+    .tiles {
+        padding: 0;
+        transition: 0.2s;
+
+        &:hover {
+            transform: scale(1.2);
+            z-index: 2;
+        }
+        
+        .tiles-1 {
+            background-color: $purple;
+            height: 250px;
+
+        }
+        .tiles-2 {
+            background-color: $green;
+            height: 250px;
+        }
+    }
+    
+    .tiles-box {
+        padding: 100px 5px 100px 5px;
+    }
+}

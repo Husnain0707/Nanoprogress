@@ -1,0 +1,56 @@
+.carousel-inner {
+
+    .carousel-item {
+
+        .carousel-img {
+            height: 436px;
+
+            @include media-breakpoint-down(md) {      
+                height: 300px;
+            }
+        }
+    }
+
+    .carousel-caption {
+        right: 0;
+        left: 40%;
+        bottom: 25%;
+
+        .banner-right-content {
+            max-width: 500px;
+            background-color: rgba(6,12,47,0.9);
+            padding: 8px 10px 10px 10px;
+            margin-left: 70px;
+            text-align: start;
+        
+            .banner-right-heading {
+                font-size: 30px;
+                color: $white;
+            }
+        
+            .banner-right-para {
+                color: $white;
+                font-size: 18px;
+                font-weight: $font400;
+            }
+        
+            .banner-show-btn {
+        
+                .show-btn {
+                    font-size: 13px;
+                    line-height: 13px;
+                    font-weight: $font600;
+                    text-transform: uppercase;
+                    color: $white;
+                    border: 1px solid $white;
+                    padding: 10px 20px;
+        
+                    &:hover {
+                        background-color: $primary;
+                        color: $darkblue;
+                    }
+                }
+            }
+        }
+    }
+}

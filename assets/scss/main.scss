@@ -1,0 +1,51 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
+@import "variables";
+@import "header";
+@import "banner";
+@import "home";
+@import "footer";
+@import "tiles";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+
+    &::after {
+        box-sizing: border-box;
+    }
+
+    &::before {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    overflow-x: hidden;
+    
+}
+
+.tiles-heading {
+    position: relative;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        left: 32%;
+        height: 3px;
+        top: -30px;
+        background-color: $white;
+
+        @include media-breakpoint-down(md) {      
+            left: 35%;
+        }
+    }
+}
